@@ -2,6 +2,9 @@
 
 I created this simple example program to show homebrew developers how to **integrate Circle Pad Pro support** on the **Nintendo 3DS** by **reading its inputs**.
 
+> [!NOTE]
+> It also read New 3ds inputs
+
 ## About this project
 
 #### Why
