@@ -62,6 +62,10 @@ Nintendo3ds fandom: https://nintendo3ds.fandom.com/wiki/Circle_Pad_Pro
 
 Red Viper: https://github.com/skyfloogle/red-viper
 
+Circle Pad Pro demo by AzureMarker : https://github.com/AzureMarker/n3ds-circle-pad-pro-demo
+
+Some research by ianrabt : https://github.com/ianrabt/3ds-circle-pad-pro-test
+
 #### forums
 gbatemp CPP developpment on 3ds(2015): https://gbatemp.net/threads/infra-red-resource-thread.399336/
 
