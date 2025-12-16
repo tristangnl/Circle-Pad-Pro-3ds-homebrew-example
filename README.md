@@ -5,6 +5,28 @@ I created this simple example program to show homebrew developers how to **integ
 > [!NOTE]
 > It also read New 3ds inputs
 
+## Features
+
+### APP
+- **Both models:**
+    - Print Circle Pad Pro **connection state**
+    - Print Circle Pad Pro **battery level**
+    - Print **Circle Pad** position (x,y)
+
+- **O3ds:**
+    - Print **Circle Pad Pro** Circle position (x,y)
+    - Print Circle Pad Pro **held keys** (ZR,ZL and R)
+
+- **N3ds:**
+    - Print **Cstick(nub)** position (x,y)
+    - Print **held N3ds-only keys** (ZR and ZL)
+    
+### Source files
+- Get all values printed in **APP**
+- **New features** that I've added:
+    - Get CPP keys **pressed** this frame (down keys)
+    - Get CPP keys **released** this frame (up keys)
+
 ## About this project
 
 #### Why

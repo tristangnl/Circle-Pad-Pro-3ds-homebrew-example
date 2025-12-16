@@ -110,6 +110,10 @@ static Thread iruserThread;
 static Handle iruserExitEvent;
 
 static volatile u32 kHeld = 0;
+// Custom addition, not present in the original file from Red Viper
+static volatile u32 kDown = 0;
+static volatile u32 kUp = 0;
+//
 static volatile circlePosition cPos = {0, 0};
 static volatile u8 batteryLevel = 0;
 
@@ -231,7 +235,17 @@ void cppCircleRead(circlePosition *pos) {
 u32 cppKeysHeld(void) {
     return kHeld;
 }
+// Custom addition, not present in the original file from Red Viper
+u32 cppKeysDown(void)
+{
+    return kDown;
+}
 
+u32 cppKeysUp(void)
+{
+    return kUp;
+}
+//
 u8 cppBatteryLevel(void) {
     return batteryLevel;
 }
@@ -378,6 +392,10 @@ static void iruserThreadFunc(void* param) {
             if (!input_response.r_up) keys |= KEY_R;
             if (!input_response.zl_up) keys |= KEY_ZL;
             if (!input_response.zr_up) keys |= KEY_ZR;
+            // Custom addition, not present in the original file from Red Viper
+            kDown = keys & ~kHeld;
+            kUp   = ~keys & kHeld;
+            //
             kHeld = keys;
 
             batteryLevel = input_response.battery_level;

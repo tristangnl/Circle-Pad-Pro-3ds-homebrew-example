@@ -15,4 +15,7 @@ bool cppGetConnected(void);
 void cppCircleRead(circlePosition *pos);
 u32 cppKeysHeld(void);
 u8 cppBatteryLevel(void);
+// Custom addition, not present in the original file from Red Viper
+u32 cppKeysDown(void);
+u32 cppKeysUp(void);
 #endif
