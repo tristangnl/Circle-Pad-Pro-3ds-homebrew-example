@@ -38,6 +38,10 @@ DATA		:=	data
 INCLUDES	:=	include
 GRAPHICS	:=	gfx
 GFXBUILD	:=	$(BUILD)
+APP_TITLE	:=	readCPPexample
+APP_DESCRIPTION	:=	read Circle Pad Pro inputs and keys(also working with new models)
+APP_AUTHOR	:=	Tristan.gnl
+# ICON		:=	
 #ROMFS		:=	romfs
 #GFXBUILD	:=	$(ROMFS)/gfx
 

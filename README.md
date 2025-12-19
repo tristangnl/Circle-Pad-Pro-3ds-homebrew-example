@@ -4,7 +4,7 @@ I created this simple example program to show homebrew developers how to **integ
 
 > [!NOTE]
 > It also read New 3ds inputs
-
+---
 ## Features
 
 ### APP
@@ -12,6 +12,7 @@ I created this simple example program to show homebrew developers how to **integ
     - Print Circle Pad Pro **connection state**
     - Print Circle Pad Pro **battery level**
     - Print **Circle Pad** position (x,y)
+    - **Calibrate** the Circle Pad Pro
 
 - **O3ds:**
     - Print **Circle Pad Pro** Circle position (x,y)
@@ -27,6 +28,17 @@ I created this simple example program to show homebrew developers how to **integ
     - Get CPP keys **pressed** this frame (down keys)
     - Get CPP keys **released** this frame (up keys)
 
+> [!WARNING]
+> opening the Rosalina menu will cause input lag once closed.
+> disable and re-enable the connection to fix it
+---
+## Screenshots
+
+![interface](screenshots/2025-12-20_00-21-42.510_top.bmp)
+
+![calibration applet](screenshots/2025-12-19_23-32-09.078_top.bmp)
+
+---
 ## About this project
 
 #### Why
@@ -49,12 +61,13 @@ I used [Red Viper](https://github.com/skyfloogle/red-viper), a homebrew that had
 
 By studying the code, I created a main.c file that uses these two source files to provide a **simple example** .3dsx of how to use them.
 
-
+---
 ## Shoutout
 I’d like to give a huge thanks to **Skyfloogle** for his work on infrared communications, as well as to all the contributors of the **3ds virtual boy emulator**, Red Viper.
 I’d also like to thank **RedTrooper**, who conducted research and developed a program on this topic a few years ago.
 Finally, many thanks to the authors of libctru and everyone who has worked on the Nintendo 3DS.
 
+---
 ## useful links 
 
 #### Doc and source code
